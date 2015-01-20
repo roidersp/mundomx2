@@ -12,10 +12,11 @@ $(".indeth_portada").css("width",w+"px");
 if(w>h){
 	$(".indepth_cont").css("height",h+"px");
 	$(".indeth_portada").css("height",h+"px");
-	$(".indepth_cont").css("width","200%");
+	$(".indepth_container").css("width","200%");
+	$(".indepth_portada_body").css("height",h+"px");
 }else{
 	$(".indepth_imag_cont").css("width",(w*2)+"px");
-	$(".indepth_cont").css("width","400%");
+	$(".indepth_container").css("width","400%");
 	$(".indepth_cont").css("height",(h*.6)+"px");
 	$(".indeth_portada").css("height",(h*.4)+"px");
 	$(".indepth_portada_body").css("background-attachment","inherit");
