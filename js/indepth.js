@@ -3,7 +3,7 @@ var num_or=num_j;
 var mobile=false;
 var w=$(window).width();
 	var h=$(window).height();
-	num_d=0;
+	var num_d=0;
 
 
 var medidas = function(){
@@ -21,7 +21,7 @@ var medidas = function(){
 		num_j=num_or;
 	}else{
 		$(".indepth_imag_cont").css("width",(w*2)+"px");
-		$(".indepth_container").css("width",(num_j*200)+"%");
+		$(".indepth_container").css("width",(num_j*100)+"%");
 		$(".indepth_cont").css("height",(h*.65)+"px");
 		$(".indeth_portada").css("height",(h*.35)+"px");
 		$(".indepth_portada_body").css("background-attachment","inherit");
@@ -126,6 +126,9 @@ if(mobile){
 
 $(window).on("resize", function(){
 	medidas(); 
+	$('.indepth_cont').animate({
+			scrollLeft: w*num_d
+		}, 10);
  
 });
 
