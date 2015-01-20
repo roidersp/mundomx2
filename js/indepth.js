@@ -13,13 +13,15 @@ var medidas = function(){
 	$(".indepth_imag_cont").css("width",w+"px");
 	$(".indeth_portada").css("width",w+"px");
 	if(w>h){
+		num_j=num_or;
 		$(".indepth_cont").css("height",h+"px");
 		$(".indeth_portada").css("height",h+"px");
 		$(".indepth_container").css("width",(num_j*100)+"%");
 		$(".indepth_portada_body").css("height",h+"px");
 		$(".indepth_button_cont").show();
-		num_j=num_or;
+		
 	}else{
+		num_j=num_or*2;
 		$(".indepth_imag_cont").css("width",(w*2)+"px");
 		$(".indepth_container").css("width",(num_j*200)+"%");
 		$(".indepth_cont").css("height",(h*.65)+"px");
@@ -27,7 +29,7 @@ var medidas = function(){
 		$(".indepth_portada_body").css("background-attachment","inherit");
 		$(".indepth_portada_body").css("height",(h*.4)+"px");
 		$(".indepth_button_cont").hide();
-	num_j=num_or*2;
+	
 		if(mobile){
 			
 		
