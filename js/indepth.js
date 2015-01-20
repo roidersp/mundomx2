@@ -1,8 +1,13 @@
-var w=$(window).width();
-var h=$(window).height();
+
 var mobile=false;
 
-$(".indepth_imag_cont").css("width",w+"px");
+
+
+var medidas = function(){
+	
+	var w=$(window).width();
+var h=$(window).height();
+	$(".indepth_imag_cont").css("width",w+"px");
 $(".indeth_portada").css("width",w+"px");
 if(w>h){
 	$(".indepth_cont").css("height",h+"px");
@@ -17,15 +22,16 @@ if(w>h){
 
 	if(mobile){
 		
-	console.log("mobil");
+	
+	}
 	
 }
-	
 }
 
 
 
 
+medidas();
 
 
 var device = navigator.userAgent
@@ -53,29 +59,7 @@ if(mobile){
 
 
 $(window).on("resize", function(){
-	 w=$(window).width();
-	 h=$(window).height();
-	 
-	 $(".indepth_imag_cont").css("width",w+"px");
-$(".indeth_portada").css("width",w+"px");
-if(w>h){
-	$(".indepth_cont").css("height",h+"px");
-	$(".indeth_portada").css("height",h+"px");
-	console.log("kekekek");
-}else{
-$(".indepth_cont").css("height",(h/2)+"px");
-console.log("dsfsdfsdf");
-$(".indeth_portada").css("height",(h/2)+"px");
-}
- 
- if(mobile){
-
-	
-	
-}else{
-	
-}
- 
+	medidas(); 
  
 });
 
