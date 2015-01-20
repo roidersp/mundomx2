@@ -7,12 +7,16 @@ $(".indeth_portada").css("width",w+"px");
 if(w>h){
 	$(".indepth_cont").css("height",h+"px");
 	$(".indeth_portada").css("height",h+"px");
-	console.log("kekekek");
 }else{
-$(".indepth_cont").css("height",(h/2)+"px");
-console.log("dsfsdfsdf");
-$(".indeth_portada").css("height",(h/2)+"px");
+	$(".indepth_imag_cont").css("width",(w*2)+"px");
+	$(".indepth_cont").css("width","400%");
+	$(".indepth_cont").css("height",(h*.6)+"px");
+	$(".indeth_portada").css("height",(h*.4)+"px");
+	
+	
 }
+
+
 
 
 
@@ -31,7 +35,7 @@ else
 
 
 if(mobile){
-
+	$(".indepth_portada_body").css(".indepth_portada_body","inherit");
 	
 }else{
 

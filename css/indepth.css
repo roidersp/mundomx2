@@ -14,7 +14,7 @@
 
 .indepth_portada_body{
 	background-image: url(../images/MUNDOMX_Logo.svg);
-	background-position: center 20%;
+	background-position: center center;
 	background-attachment: fixed;
 	background-color: #00aab6;
 	background-repeat: no-repeat;
