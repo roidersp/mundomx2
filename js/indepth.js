@@ -49,7 +49,7 @@ else
 
 
 if(mobile){
-	$(".indepth_portada_body").css(".indepth_portada_body","inherit");
+	$(".indepth_portada_body").css("background-attachment","inherit");
 	console.log("mobile");
 	
 }else{
