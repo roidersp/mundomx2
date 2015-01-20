@@ -34,7 +34,9 @@ var medidas = function(){
 		}
 		
 	}
-}
+	
+	console.log(num_j);
+	}
 
 
 $(document).on("click", "#indepth_button_ver" ,function(){
@@ -55,7 +57,7 @@ if(num_d>=(num_j-1)){
 		$(".fecha_l div").show();
 	}
 
-$(".fecha_r").on("click",function(){
+$(".fecha_r div").on("click",function(){
 	num_d=num_d+1;
 	$('.indepth_cont').animate({
 			scrollLeft: w*num_d
@@ -73,7 +75,7 @@ $(".fecha_r").on("click",function(){
 	}
 });
 
-$(".fecha_l").on("click",function(){
+$(".fecha_l div").on("click",function(){
 	num_d=num_d-1;
 	$('.indepth_cont').animate({
 			scrollLeft: w*num_d
