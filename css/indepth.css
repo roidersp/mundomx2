@@ -10,12 +10,14 @@
 
 .indeth_portada{
 	position: relative;
+	background-image: url(../images/MUNDOMX_FondoPortada.jpg);
+	background-repeat: repeat-x;
+	background-size: auto 100%;
 }
 
 .indepth_portada_body{
 	background-image: url(../images/MUNDOMX_Logo.svg);
 	background-position: center center;
-	background-color: #00aab6;
 	background-repeat: no-repeat;
 	background-size: 40%;
 	width: 100%;
@@ -41,8 +43,8 @@
 .indepth_cont{
 	width: 100%;
 	height: auto;
-	background-image: url(../images/pixel.png);
-	background-color: #17a6ab;
+	background-color: #1D5887;
+	background-position: center bottom;
 	position: relative;
 	overflow: scroll;
 }
@@ -115,4 +117,12 @@
 	position: absolute;
 	bottom: 0px;
 	display: table;
+}
+
+.indepth_flechas{
+	width: 100px;
+	height: 50px;
+	margin: auto;
+	position: fixed;
+	
 }
