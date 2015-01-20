@@ -21,7 +21,7 @@ var medidas = function(){
 		num_j=num_or;
 	}else{
 		$(".indepth_imag_cont").css("width",(w*2)+"px");
-		$(".indepth_container").css("width",(num_j*100)+"%");
+		$(".indepth_container").css("width",(num_j*200)+"%");
 		$(".indepth_cont").css("height",(h*.65)+"px");
 		$(".indeth_portada").css("height",(h*.35)+"px");
 		$(".indepth_portada_body").css("background-attachment","inherit");
