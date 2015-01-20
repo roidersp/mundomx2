@@ -12,7 +12,14 @@ if(w>h){
 	$(".indepth_cont").css("width","400%");
 	$(".indepth_cont").css("height",(h*.6)+"px");
 	$(".indeth_portada").css("height",(h*.4)+"px");
+	$(".indepth_portada_body").css("background-attachment","inherit");
+		$(".indepth_portada_body").css("height",(h*.4)+"px");
+
+	if(mobile){
+		
+	console.log("mobil");
 	
+}
 	
 }
 
@@ -36,6 +43,7 @@ else
 
 if(mobile){
 	$(".indepth_portada_body").css(".indepth_portada_body","inherit");
+	
 	
 }else{
 
