@@ -17,8 +17,8 @@ if(w>h){
 }else{
 	$(".indepth_imag_cont").css("width",(w*2)+"px");
 	$(".indepth_container").css("width","400%");
-	$(".indepth_cont").css("height",(h*.6)+"px");
-	$(".indeth_portada").css("height",(h*.4)+"px");
+	$(".indepth_cont").css("height",(h*.65)+"px");
+	$(".indeth_portada").css("height",(h*.35)+"px");
 	$(".indepth_portada_body").css("background-attachment","inherit");
 		$(".indepth_portada_body").css("height",(h*.4)+"px");
 
