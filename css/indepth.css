@@ -17,18 +17,33 @@
 
 .indepth_portada_body{
 	background-image: url(../images/MUNDOMX_Logo.svg);
-	background-position: center center;
+	background-position: center center;;
 	background-repeat: no-repeat;
 	background-size: 40%;
 	width: 100%;
 	height: 100%;
 }
 
+
+.indepth_button_cont{
+	width: 100%;
+	position: absolute;
+	bottom: 10%;
+	cursor: pointer;
+}
+#indepth_button_ver{
+	width: 30px;
+	height: 30px;
+	background-image: url(../images/arrow_carrot-down_alt.svg);
+	background-position: center center;
+	background-size: 100%;
+	margin: auto;
+}
+
 .indepth_imag_cont{
 	width: 100%;
 	float: left;
 }
-
 
 .indepth_imag_cont img{
 	width: 100%;
@@ -50,17 +65,17 @@
 }
 
 .indepth_share{
-		position: fixed;
-		right: 15px;
-		top: 70px;
-		z-index: 2000;
-		display: -webkit-inline-box;
-     display: -webkit-inline-flex;
-   display: -moz-inline-box;
-     display: -ms-inline-flexbox;
-     display: inline-flex;
+	position: fixed;
+	right: 15px;
+	top: 70px;
+	z-index: 2000;
+	display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+	display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
 		
-	}
+}
 	
 	#drag{
 		display: none;
@@ -119,10 +134,45 @@
 	display: table;
 }
 
-.indepth_flechas{
-	width: 100px;
+.indepth_flechas_cont{
+	width: 100%;
+	position: absolute;
+	bottom: 50px;
 	height: 50px;
+}
+
+.indepth_flechas{
+	width: 120px;
+	height: 100%;
 	margin: auto;
-	position: fixed;
+}
+
+
+.indepth_flecha{
+	width: 50px;
+	float: left;
+	height: 100%;
 	
+}
+
+.indepth_flecha div{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.fecha_l{
+	margin-right: 20px;
+}
+
+.fecha_l div{
+	background-image: url(../images/MUNDOMXFlechasIZQ.svg);
+	background-position: left center;
+	background-size: auto 100px;
+}
+
+.fecha_r div{
+	background-image: url(../images/MUNDOMX_FlechasDER.svg);
+	background-position: right center;
+	background-size: auto 100px;
 }
