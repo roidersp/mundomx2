@@ -50,7 +50,7 @@ else
 
 if(mobile){
 	$(".indepth_portada_body").css(".indepth_portada_body","inherit");
-	
+	console.log("mobile");
 	
 }else{
 
