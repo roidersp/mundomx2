@@ -23,7 +23,7 @@ var medidas = function(){
 	}else{
 		num_j=num_or*2;
 		$(".indepth_imag_cont").css("width",(w*2)+"px");
-		$(".indepth_container").css("width",(num_j*200)+"%");
+		$(".indepth_container").css("width",(num_j*100)+"%");
 		$(".indepth_cont").css("height",(h*.65)+"px");
 		$(".indeth_portada").css("height",(h*.35)+"px");
 		$(".indepth_portada_body").css("background-attachment","inherit");
@@ -34,6 +34,17 @@ var medidas = function(){
 			
 		
 		}
+		
+		if(num_d>=(num_j-1)){
+		$(".fecha_r div").hide();
+	}else{
+		$(".fecha_r div").show();
+	}
+	if(num_d<=0){
+		$(".fecha_l div").hide();
+	}else{
+		$(".fecha_l div").show();
+	}
 		
 	}
 	
