@@ -147,7 +147,7 @@ $(window).on("resize", function(){
 
 
 
-$("#scrolllll").swipe( { swipeLeft:swipe2, swipeRight:swipe1, allowPageScroll:"horizontal"} );
+$("#scrolllll").swipe( { swipeLeft:swipe1, swipeRight:swipe2, allowPageScroll:"horizontal"} );
 
  function swipe1(event, phase, direction, distance) {
         
