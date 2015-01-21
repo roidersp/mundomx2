@@ -128,7 +128,7 @@ else
 
 if(mobile){
 	$(".indepth_portada_body").css("background-attachment","inherit");
-	
+	$(".indepth_cont").css("overflow","hidden");
 	
 }else{
 
@@ -147,40 +147,17 @@ $(window).on("resize", function(){
 
 
 
-$("#scrolllll").swipe( { swipeStatus:swipe2, allowPageScroll:"horizontal"} );
+$("#scrolllll").swipe( { swipeLeft:swipe2, swipeRight:swipe1, allowPageScroll:"horizontal"} );
 
- function swipe2(event, phase, direction, distance) {
-        console.log(direction);
-        if(direction=='left'){
-	        if(num_d<=0){
-				num_d=num_d-1;
-			}
-	        
-			$('.indepth_cont').animate({
-					scrollLeft: w*num_d
-				}, 2000);
-			if(num_d>=(num_j-1)){
-				$(".fecha_r div").hide();
-			}else{
-				$(".fecha_r div").show();
-			}
-			if(num_d<=0){
-				$(".fecha_l div").hide();
-			}else{
-				$(".fecha_l div").show();
-			}
-        }
+ function swipe1(event, phase, direction, distance) {
         
-        if(direction=='right'){
-	        if(num_d>=(num_j-1)){
+        console.log("r");
+	        if(num_d<(num_j-1)){
 		        num_d=num_d+1;
 	        }
 	        
-			$('.indepth_cont').animate({
-					scrollLeft: w*num_d
-				}, 2000);
 				
-			if(num_d>=(num_j-1)){
+			if(num_d>(num_j)){
 				$(".fecha_r div").hide();
 			}else{
 				$(".fecha_r div").show();
@@ -190,8 +167,38 @@ $("#scrolllll").swipe( { swipeStatus:swipe2, allowPageScroll:"horizontal"} );
 			}else{
 				$(".fecha_l div").show();
 			}
-        }
+			
+			 console.log(num_d);
+			 $('.indepth_cont').animate({
+				scrollLeft: w*num_d
+			}, 600);
+        
+       
    }
+    function swipe2(event, phase, direction, distance) {
+  console.log("left");
+	        if(num_d>0){
+				num_d=num_d-1;
+			}
+	        
+		
+			
+			if(num_d<(num_j-1)){
+				$(".fecha_r div").hide();
+			}else{
+				$(".fecha_r div").show();
+			}
+			if(num_d>=0){
+				$(".fecha_l div").hide();
+			}else{
+				$(".fecha_l div").show();
+			}
+			
+			$('.indepth_cont').animate({
+			scrollLeft: w*num_d
+		}, 600);
+			console.log(num_d);
+        }
 
 
 
