@@ -147,3 +147,11 @@ $(window).on("resize", function(){
 
 
 
+$(".indepth_cont").swipe( { swipeStatus:swipe2, allowPageScroll:"vertical"} );
+
+ function swipe2(event, phase, direction, distance) {
+        alert(direction);
+   }
+
+
+
