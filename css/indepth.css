@@ -10,14 +10,32 @@
 
 .indeth_portada{
 	position: relative;
-	background-image: url(../images/MUNDOMX_FondoPortada.jpg);
+	background: #1D5887; /* Old browsers */
+	background: -moz-linear-gradient(top,  #085e82 0%, #1d5887 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#085e82), color-stop(100%,#1d5887)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #085e82 0%,#1d5887 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #085e82 0%,#1d5887 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #085e82 0%,#1d5887 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #085e82 0%,#1d5887 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#085e82', endColorstr='#1d5887',GradientType=0 ); /* IE6-9 */
+	
+	
+}
+
+.indepth_portada_estrella{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/MUNDOMX_EstrellasPortada.png);
 	background-repeat: repeat-x;
 	background-size: auto 100%;
 }
 
 .indepth_portada_body{
 	background-image: url(../images/MUNDOMX_Logo.svg);
-	background-position: center center;;
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 40%;
 	width: 100%;
