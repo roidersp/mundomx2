@@ -194,3 +194,46 @@
 	background-position: right center;
 	background-size: auto 100px;
 }
+
+@media screen and (max-width: 600px) {
+	.indepth_flechas_cont{
+		bottom: 7px;
+		height: 30px;
+	}
+	.indepth_flechas{
+		width: 80px;
+	}
+	
+	.indepth_flecha{
+		width: 30px;
+	}
+	
+	.fecha_l div{
+	background-size: auto 60px;
+}
+
+.fecha_r div{
+	background-size: auto 60px;
+}
+}
+
+@media screen and (max-height: 600px) {
+	.indepth_flechas_cont{
+		bottom: 7px;
+		height: 30px;
+	}
+	.indepth_flechas{
+		width: 80px;
+	}
+	
+	.indepth_flecha{
+		width: 30px;
+	}
+	
+	.fecha_l div{
+	background-size: auto 60px;
+}
+
+.fecha_r div{
+	background-size: auto 60px;
+}

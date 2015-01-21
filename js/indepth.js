@@ -29,6 +29,7 @@ var medidas = function(){
 		$(".indepth_portada_body").css("background-attachment","inherit");
 		$(".indepth_portada_body").css("height",(h*.4)+"px");
 		$(".indepth_button_cont").hide();
+		$(".indepth_flechas_cont").css("bottom","7px");
 	
 		if(mobile){
 			
@@ -147,7 +148,7 @@ $(window).on("resize", function(){
 
 
 
-$("#scrolllll").swipe( { swipeLeft:swipe1, swipeRight:swipe2, allowPageScroll:"horizontal"} );
+$("#scrolllll").swipe( { swipeLeft:swipe1, swipeRight:swipe2, allowPageScroll:"auto"} );
 
  function swipe1(event, phase, direction, distance) {
         
@@ -157,16 +158,17 @@ $("#scrolllll").swipe( { swipeLeft:swipe1, swipeRight:swipe2, allowPageScroll:"h
 	        }
 	        
 				
-			if(num_d>(num_j)){
-				$(".fecha_r div").hide();
-			}else{
-				$(".fecha_r div").show();
-			}
-			if(num_d<=0){
-				$(".fecha_l div").hide();
-			}else{
-				$(".fecha_l div").show();
-			}
+			if(num_d>=(num_j-1)){
+		$(".fecha_r div").hide();
+	}else{
+		$(".fecha_r div").show();
+	}
+	if(num_d<=0){
+		$(".fecha_l div").hide();
+	}else{
+		$(".fecha_l div").show();
+	}
+
 			
 			 console.log(num_d);
 			 $('.indepth_cont').animate({
@@ -183,16 +185,17 @@ $("#scrolllll").swipe( { swipeLeft:swipe1, swipeRight:swipe2, allowPageScroll:"h
 	        
 		
 			
-			if(num_d<(num_j-1)){
-				$(".fecha_r div").hide();
-			}else{
-				$(".fecha_r div").show();
-			}
-			if(num_d>=0){
-				$(".fecha_l div").hide();
-			}else{
-				$(".fecha_l div").show();
-			}
+			if(num_d>=(num_j-1)){
+		$(".fecha_r div").hide();
+	}else{
+		$(".fecha_r div").show();
+	}
+	if(num_d<=0){
+		$(".fecha_l div").hide();
+	}else{
+		$(".fecha_l div").show();
+	}
+
 			
 			$('.indepth_cont').animate({
 			scrollLeft: w*num_d
