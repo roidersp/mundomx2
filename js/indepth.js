@@ -1,9 +1,48 @@
-var num_j=2;
+var num_j=3;
 var num_or=num_j;
 var mobile=false;
 var w=$(window).width();
 	var h=$(window).height();
-	var num_d=0;
+	var num_d=2;
+$('.indepth_cont').animate({
+			scrollLeft: w*num_d
+		}, 1);
+
+var disqus_shortname = 'juanfutbol';
+var disqus_identifier;
+var disqus_url="98f8df57-8081-4394-b494-ef5a88e85895";
+var disqus_number_c=2;
+var disqus_per_page=3;
+var tamaño_total=1920;
+
+
+ function loadDisqus(source, identifier, url) {
+if (window.DISQUS) {
+   jQuery('#disqus_thread').insertAfter(source);
+   /** if Disqus exists, call it's reset method with new parameters **/
+
+    DISQUS.reset({
+  reload: true,
+  config: function () { 
+   this.page.identifier = identifier.toString();    //important to convert it to string
+   this.page.url = url;
+  }
+ });
+} else {
+//insert a wrapper in HTML after the relevant "show comments" link
+	source.append('<div id="disqus_thread"></div>');
+   //jQuery('<div id="disqus_thread"></div>').insertAfter(source);
+   disqus_identifier = identifier; //set the identifier argument
+   disqus_url = url; //set the permalink argument
+   disqus_per_page=3;
+   //append the Disqus embed script to HTML
+   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+   dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+   jQuery('head').append(dsq);
+}
+};
+
+loadDisqus($("#indepth_coments"),disqus_url, "http://juanfutbol.com/indepth/"+disqus_url);
 
 
 var medidas = function(){
@@ -16,14 +55,14 @@ var medidas = function(){
 		num_j=num_or;
 		$(".indepth_cont").css("height",h+"px");
 		$(".indeth_portada").css("height",h+"px");
-		$(".indepth_container").css("width",(num_j*100)+"%");
+		$(".indepth_container").css("width",(num_j*102)+"%");
 		$(".indepth_portada_body").css("height",h+"px");
 		$(".indepth_button_cont").show();
 		
 	}else{
 		num_j=num_or*2;
 		$(".indepth_imag_cont").css("width",(w*2)+"px");
-		$(".indepth_container").css("width",(num_j*100)+"%");
+		$(".indepth_container").css("width",(num_j*102)+"%");
 		$(".indepth_cont").css("height",(h*.65)+"px");
 		$(".indeth_portada").css("height",(h*.35)+"px");
 		$(".indepth_portada_body").css("background-attachment","inherit");

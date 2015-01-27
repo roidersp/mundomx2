@@ -22,6 +22,17 @@
 	
 }
 
+#com{
+	background: white;
+	padding-top: 20px;
+}
+
+#indepth_coments{
+	max-width: 1310px;
+	margin: auto;
+	width: 100%;
+}
+
 .indepth_portada_estrella{
 	position: absolute;
 	top: 0;
@@ -80,6 +91,7 @@
 	background-position: center bottom;
 	position: relative;
 	overflow: scroll;
+	overflow-y: hidden; 
 }
 
 .indepth_share{
@@ -150,6 +162,7 @@
 	position: absolute;
 	bottom: 0px;
 	display: table;
+	
 }
 
 .indepth_flechas_cont{
@@ -195,6 +208,20 @@
 	background-size: auto 100px;
 }
 
+
+@media screen and (max-width: 1310px) {
+	#indepth_coments{
+	max-width: 1020px;
+
+}
+}
+
+@media screen and (max-width: 1020px) {
+	#indepth_coments{
+	max-width: 90%;
+
+}
+}
 @media screen and (max-width: 600px) {
 	.indepth_flechas_cont{
 		bottom: 7px;
