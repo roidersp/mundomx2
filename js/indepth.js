@@ -4,9 +4,20 @@ var mobile=false;
 var w=$(window).width();
 	var h=$(window).height();
 	var num_d=2;
+
+
+if(w>h){
 $('.indepth_cont').animate({
 			scrollLeft: w*num_d
 		}, 1);
+}else{
+	
+	$('.indepth_cont').animate({
+			scrollLeft: (w*((2*num_d)))
+		}, 1);
+		num_d=(2*num_d);
+}
+
 
 var disqus_shortname = 'juanfutbol';
 var disqus_identifier;
@@ -45,15 +56,60 @@ if (window.DISQUS) {
 loadDisqus($("#indepth_coments"),disqus_url, "http://juanfutbol.com/indepth/"+disqus_url);
 
 
+
+var zoom = function(jornada, x, y, x1, y1, num){
+	var total_w;
+	if(w>h){
+		x=(x*w)/1920;
+		y=(y*w)/1920;
+		x1=(x1*w)/1920;
+		y1=(y1*w)/1920;
+	}else{
+		x=(x*(w*2))/1920;
+		y=(y*(w*2))/1920;
+		x1=(x1*(w*2))/1920;
+		y1=(y1*(w*2))/1920;
+	}
+	
+	
+	
+	
+	$("#jornada"+jornada+" map").append('<area  num="'+(num)+'" shape="RECT" href=javascript:void(0); coords="'+x+','+y+','+x1+','+y1+'"></area>');
+}
+
+$(".indepth_imag_cont map").html("");
+zoom("3", 418, 650, 710, 860, "1");
+zoom("3", 880, 375, 1315, 565, "2");
+zoom("3", 1045, 580, 1230, 855, "3" );
+
+$(document).on("click","area",function(){
+	$(".indepth_image_zoom").show();
+	$("#image_j3_"+$(this).attr("num")).show();
+});
+
+$(".indepth_image_zoom").on("click",function(){
+	$(this).hide();
+	$(this).find("img").hide();
+});
+
 var medidas = function(){
 	
 	w=$(window).width();
 	h=$(window).height();
+	g=$(".indepth_flechas_cont").width();
+	$(".indepth_flechas_cont").css("margin-left",((w-g)/2)+"px");
+	var zoom_h;
 	$(".indepth_imag_cont").css("width",w+"px");
 	$(".indeth_portada").css("width",w+"px");
+	
+	$(".indepth_image_zoom").css("width",w+"px");
+	
+	
 	if(w>h){
 		num_j=num_or;
 		$(".indepth_cont").css("height",h+"px");
+		zomm_h=(900*w)/1920;
+		$(".indepth_image_zoom").css("height",zomm_h+"px");
 		$(".indeth_portada").css("height",h+"px");
 		$(".indepth_container").css("width",((num_j*w)+60)+"px");
 		$(".indepth_portada_body").css("height",h+"px");
@@ -64,6 +120,8 @@ var medidas = function(){
 		$(".indepth_imag_cont").css("width",(w*2)+"px");
 		$(".indepth_container").css("width",((num_j*w)+60)+"px");
 		$(".indepth_cont").css("height",(h*.65)+"px");
+		zomm_h=(h*.65);
+		$(".indepth_image_zoom").css("height",zomm_h+"px");
 		$(".indeth_portada").css("height",(h*.35)+"px");
 		$(".indepth_portada_body").css("background-attachment","inherit");
 		$(".indepth_portada_body").css("height",(h*.4)+"px");
@@ -87,6 +145,11 @@ var medidas = function(){
 	}
 		
 	}
+	
+	
+	btf=(zomm_h-$(".indepth_image_zoom_item").height())/2;
+	$(".indepth_image_zoom_item").css("margin-top",btf+"px");
+	
 	
 	console.log(num_j);
 	}
@@ -182,6 +245,11 @@ $(window).on("resize", function(){
 	$('.indepth_cont').animate({
 			scrollLeft: w*num_d
 		}, 10);
+		
+		$(".indepth_imag_cont map").html("");
+	zoom("3", 418, 650, 710, 860, "1");
+	zoom("3", 880, 375, 1315, 565, "2");
+	zoom("3", 1045, 580, 1230, 855, "3" );
  
 });
 
