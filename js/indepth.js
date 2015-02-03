@@ -1,9 +1,10 @@
-var num_j=3;
+var num_j=4;
 var num_or=num_j;
+var num_d=3;
 var mobile=false;
 var w=$(window).width();
 	var h=$(window).height();
-	var num_d=2;
+	
 
 
 if(w>h){
@@ -74,7 +75,7 @@ var zoom = function(jornada, x, y, x1, y1, num){
 	
 	
 	
-	$("#jornada"+jornada+" map").append('<area  num="'+(num)+'" shape="RECT" href=javascript:void(0); coords="'+x+','+y+','+x1+','+y1+'"></area>');
+	$("#jornada"+jornada+" map").append('<area jornada="'+(jornada)+'" num="'+(num)+'" shape="RECT" href=javascript:void(0); coords="'+x+','+y+','+x1+','+y1+'"></area>');
 }
 
 $(".indepth_imag_cont map").html("");
@@ -82,9 +83,15 @@ zoom("3", 418, 650, 710, 860, "1");
 zoom("3", 880, 375, 1315, 565, "2");
 zoom("3", 1045, 580, 1230, 855, "3" );
 
+zoom("4", 575, 360, 710, 530, "1");
+zoom("4", 1260, 70, 1500, 220, "2");
+zoom("4", 1060, 395, 1730, 615, "3" );
+
 $(document).on("click","area",function(){
 	$(".indepth_image_zoom").show();
-	$("#image_j3_"+$(this).attr("num")).show();
+	var r=$(this).attr("jornada");
+	console.log(r);
+	$("#image_j"+$(this).attr("jornada")+"_"+$(this).attr("num")).show();
 });
 
 $(".indepth_image_zoom").on("click",function(){

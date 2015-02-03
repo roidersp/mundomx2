@@ -103,8 +103,7 @@
     display: -webkit-inline-flex;
 	display: -moz-inline-box;
     display: -ms-inline-flexbox;
-    display: inline-flex;
-		
+    display: inline-flex;	
 }
 	
 	#drag{
@@ -176,8 +175,8 @@
 }
 
 .indepth_image_zoom_item{
-	width: 800px;
-	height: 555px;
+	width: 650px;
+	height: 447px;
 	margin: auto;
 }
 
