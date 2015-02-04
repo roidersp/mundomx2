@@ -265,7 +265,7 @@ zoom("4", 1060, 395, 1730, 615, "3" );
 
 
 
-$("#scrolllll").swipe( { swipeLeft:swipe1, swipeRight:swipe2, allowPageScroll:"horizontal"} );
+//$("#scrolllll").swipe( { swipeLeft:swipe1, swipeRight:swipe2, allowPageScroll:"horizontal"} );
 
  function swipe1(event, phase, direction, distance) {
         
