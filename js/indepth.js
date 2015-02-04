@@ -257,12 +257,15 @@ $(window).on("resize", function(){
 	zoom("3", 418, 650, 710, 860, "1");
 	zoom("3", 880, 375, 1315, 565, "2");
 	zoom("3", 1045, 580, 1230, 855, "3" );
+	zoom("4", 575, 360, 710, 530, "1");
+zoom("4", 1260, 70, 1500, 220, "2");
+zoom("4", 1060, 395, 1730, 615, "3" );
  
 });
 
 
 
-$("#scrolllll").swipe( { swipeLeft:swipe1, swipeRight:swipe2, allowPageScroll:"auto"} );
+$("#scrolllll").swipe( { swipeLeft:swipe1, swipeRight:swipe2, allowPageScroll:"horizontal"} );
 
  function swipe1(event, phase, direction, distance) {
         
@@ -292,7 +295,6 @@ $("#scrolllll").swipe( { swipeLeft:swipe1, swipeRight:swipe2, allowPageScroll:"a
        
    }
     function swipe2(event, phase, direction, distance) {
-  console.log("left");
 	        if(num_d>0){
 				num_d=num_d-1;
 			}
