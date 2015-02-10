@@ -178,6 +178,7 @@
 	width: 650px;
 	height: 447px;
 	margin: auto;
+	border: 4px solid white;
 }
 
 .indepth_image_zoom_item img{
