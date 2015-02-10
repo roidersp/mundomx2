@@ -1,6 +1,6 @@
-var num_j=4;
+var num_j=5;
 var num_or=num_j;
-var num_d=3;
+var num_d=4;
 var mobile=false;
 var w=$(window).width();
 	var h=$(window).height();
@@ -86,6 +86,12 @@ zoom("3", 1045, 580, 1230, 855, "3" );
 zoom("4", 575, 360, 710, 530, "1");
 zoom("4", 1260, 70, 1500, 220, "2");
 zoom("4", 1060, 395, 1730, 615, "3" );
+
+zoom("5", 40, 435, 350, 675, "1");
+zoom("5", 370, 390, 610, 605, "3");
+zoom("5", 450, 615, 805, 865, "2" );
+zoom("5", 1230, 555, 1620, 815, "4" );
+
 
 $(document).on("click","area",function(){
 	$(".indepth_image_zoom").show();
@@ -259,13 +265,13 @@ $(window).on("resize", function(){
 	zoom("3", 1045, 580, 1230, 855, "3" );
 	zoom("4", 575, 360, 710, 530, "1");
 zoom("4", 1260, 70, 1500, 220, "2");
-zoom("4", 1060, 395, 1730, 615, "3" );
+zoom("4", 1460, 395, 1730, 615, "3" );
  
 });
 
 
 
-//$("#scrolllll").swipe( { swipeLeft:swipe1, swipeRight:swipe2, allowPageScroll:"horizontal"} );
+$("#scrolllll").swipe( { swipeLeft:swipe1, swipeRight:swipe2, allowPageScroll:"horizontal"} );
 
  function swipe1(event, phase, direction, distance) {
         
