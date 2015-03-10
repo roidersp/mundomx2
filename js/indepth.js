@@ -157,14 +157,14 @@ var medidas = function(){
 		zomm_h=(900*w)/1920;
 		$(".indepth_image_zoom").css("height",zomm_h+"px");
 		$(".indeth_portada").css("height",h+"px");
-		$(".indepth_container").css("width",((num_j*w)+60)+"px");
+		$(".indepth_container").css("width",((num_j*w)+40)+"px");
 		$(".indepth_portada_body").css("height",h+"px");
 		$(".indepth_button_cont").show();
 		
 	}else{
 		num_j=num_or*2;
 		$(".indepth_imag_cont").css("width",(w*2)+"px");
-		$(".indepth_container").css("width",((num_j*w)+60)+"px");
+		$(".indepth_container").css("width",((num_j*w)+40)+"px");
 		$(".indepth_cont").css("height",(h*.65)+"px");
 		zomm_h=(h*.65);
 		$(".indepth_image_zoom").css("height",zomm_h+"px");
