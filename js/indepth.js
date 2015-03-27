@@ -1,4 +1,4 @@
-var num_j=10;
+var num_j=11;
 var num_or=num_j;
 var num_d=num_j-1;
 var mobile=false;
@@ -126,6 +126,11 @@ var mapa_img = function(){
 	zoom("10", 700, 425, 1015 ,770,"1");
 	zoom("10", 1070, 600, 1385, 810, "2" );
 	zoom("10", 1460, 310, 1695, 590, "3" );
+	
+	zoom("11", 440, 415, 710, 660, "2");
+	zoom("11", 770, 320, 990 ,560,"1");
+	zoom("11", 1000, 640, 1190, 840, "3" );
+	zoom("11", 1240, 510, 1485, 710, "4" );
 }
 
 
@@ -356,6 +361,27 @@ $("#scrolllll").swipe( { swipeLeft:swipe1, swipeRight:swipe2, allowPageScroll:"h
 		}, 600);
 			console.log(num_d);
         }
+        
+        if(w>h){
+$('.indepth_cont').animate({
+			scrollLeft: w*num_d
+		}, 1);
+		
+		console.log("w>h "+(w*num_d));
+		
+		
+}else{
+	
+	$('.indepth_cont').animate({
+			scrollLeft: (w*((2*num_d)))
+		}, 1);
+		
+		console.log("else "+(w*((2*num_d))));
+		
+		num_d=(2*num_d);
+		
+		
+}
 
 
 
