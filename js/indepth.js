@@ -1,4 +1,4 @@
-var num_j=11;
+var num_j=12;
 var num_or=num_j;
 var num_d=num_j-1;
 var mobile=false;
@@ -131,16 +131,24 @@ var mapa_img = function(){
 	zoom("11", 770, 320, 990 ,560,"1");
 	zoom("11", 1000, 640, 1190, 840, "3" );
 	zoom("11", 1240, 510, 1485, 710, "4" );
+	
+	zoom("12", 830, 175, 1210, 415, "1");
+	zoom("12", 770, 425, 990 ,550,"2");
+	zoom("12", 140, 560, 695, 795, "3" );
+	zoom("12", 780, 560, 1210, 825, "4" );
+	zoom("12", 1215, 660, 1470 ,880,"5");
+	zoom("12", 1600, 640, 1830, 855, "6" );
+	zoom("12", 1385, 285, 1830, 555, "7" );
 }
 
 
 mapa_img();
 
 $(document).on("click","area",function(){
-	$(".indepth_image_zoom").show();
+	$(".indepth_image_zoom").css("display","table");
 	var r=$(this).attr("jornada");
 	console.log(r);
-	$("#image_j"+$(this).attr("jornada")+"_"+$(this).attr("num")).show();
+	$("#image_j"+$(this).attr("jornada")+"_"+$(this).attr("num")).css("display","table");;
 });
 
 $(".indepth_image_zoom").on("click",function(){
@@ -204,7 +212,7 @@ var medidas = function(){
 	
 	
 	btf=(zomm_h-$(".indepth_image_zoom_item").height())/2;
-	$(".indepth_image_zoom_item").css("margin-top",btf+"px");
+	//$(".indepth_image_zoom_item").css("margin-top",btf+"px");
 	
 	
 	console.log(num_j);

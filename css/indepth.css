@@ -190,10 +190,17 @@
 }
 
 .indepth_image_zoom_item{
+	display: table-cell;
+	vertical-align: middle;
+	margin: auto;
+}
+
+.indepth_image_zoom_item_cont{
 	width: 650px;
-	height: 447px;
+	height: auto;
 	margin: auto;
 	border: 4px solid white;
+	
 }
 
 .indepth_image_zoom_item img{
@@ -258,9 +265,8 @@
 
 }	
 
-.indepth_image_zoom_item{
+.indepth_image_zoom_item_cont{
 	width: 500px;
-	height: 344px;
 	margin: auto;
 }
 }
@@ -291,10 +297,9 @@
 
 @media screen and (max-width: 414px) {
 	
-.indepth_image_zoom_item{
+.indepth_image_zoom_item_cont{
 
 	width: 320px;
-	height: 220px;
 	}
 }
 
