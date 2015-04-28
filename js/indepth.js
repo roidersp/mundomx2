@@ -1,4 +1,4 @@
-var num_j=13;
+var num_j=15;
 var num_or=num_j;
 var num_d=num_j-1;
 var mobile=false;
@@ -7,12 +7,11 @@ var h=$(window).height();
 	
 
 
-if(w>h){
+/*if(w>h){
 $('.indepth_cont').animate({
 			scrollLeft: w*num_d
 		}, 1);
 		
-		console.log("w>h "+(w*num_d));
 		
 		
 }else{
@@ -21,12 +20,11 @@ $('.indepth_cont').animate({
 			scrollLeft: (w*((2*num_d)))
 		}, 1);
 		
-		console.log("else "+(w*((2*num_d))));
 		
 		num_d=(2*num_d);
 		
 		
-}
+}*/
 
 
 var disqus_shortname = 'juanfutbol';
@@ -148,6 +146,16 @@ var mapa_img = function(){
 	zoom("13", 1090, 300, 1280, 560, "7" );
 	zoom("13", 540, 520, 790, 800, "8" );
 	zoom("13", 1425, 345, 1630, 520, "9" );
+	
+	zoom("14", 610, 235, 800, 435, "1");
+	zoom("14", 925, 250, 1250 ,480,"2");
+	zoom("14", 890, 445, 1190, 720, "3" );
+	zoom("14", 1400, 535, 1825, 815, "4" );
+	
+	zoom("15", 390, 285, 637, 535, "2");
+	zoom("15", 180, 545, 555 ,730,"1");
+	zoom("15", 725, 175, 1360, 475, "3" );
+	zoom("15", 530, 535, 1230, 810, "4" );
 }
 
 

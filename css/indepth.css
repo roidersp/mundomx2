@@ -189,6 +189,15 @@
 	
 }
 
+map{
+	cursor: zoom-in;
+}
+
+.indepth_image_zoom{
+	cursor: zoom-out;
+}
+
+
 .indepth_image_zoom_item{
 	display: table-cell;
 	vertical-align: middle;
