@@ -1,4 +1,4 @@
-var num_j=17;
+var num_j=18;
 var num_or=num_j;
 var num_d=num_j-1;
 var mobile=false;
