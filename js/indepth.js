@@ -1,6 +1,6 @@
-var num_j=18;
+var num_j=20;
 var num_or=num_j;
-var num_d=num_j-1;
+var num_d=num_j-2;
 var mobile=false;
 var w=$(window).width();
 var h=$(window).height();
@@ -171,6 +171,12 @@ var mapa_img = function(){
 	zoom("18", 580, 450, 910 ,830,"2");
 	zoom("18", 1060, 295, 1340, 610, "3" );
 	zoom("18", 1315, 545, 1855, 830, "4" );
+	
+	zoom("19", 220, 340, 980, 710, "1");
+	zoom("19", 1035, 335, 1680 ,655,"2");
+	
+	zoom("20", 190, 280, 1110, 640, "1");
+	zoom("20", 1230, 315, 1720 ,900,"2");
 }
 
 
